@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Stotra Pushpanjali</title>
+
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon/favicon-180x180.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#7b2cbf">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="site-logo" class="logo-image">
+            <span class="site-name">Stotra Pushpanjali</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" title="Home Page">Home</a></li>
+            <li><a href="about.html" title="About Us Page">About</a></li>
+
+            <li class="dropdown">
+       <a href="javascript:void(0)" title="Select God and Explore Page ">
+Explore Gods <span class="arrow">🔽</span> </a>
+                <ul class="dropdown-menu">
+                    <li><a href="shiva.html">Shiva</a></li>
+                    <li><a href="ganesh.html">Shri Ganesh</a></li>
+                    <li><a href="krishna.html">Shri Krishna</a></li>
+                    <li><a href="ram.html">Shri Ram</a></li>
+                    <li><a href="abhanga.html">Marathi Abhanga</a></li>
+                    <li><a href="hanuman.html">Shri Hanuman</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html" title="Contact Page">Contact Us</a></li>
+        </ul>
+
+        <!-- ✅ HAMBURGER MENU BUTTON -->
+        <div class="hamburger">&#9776;</div>
+
+    </nav>
+</header>
+
+<!-- BACK BUTTON -->
+    <div class="back-btn-container">
+    <button id="backBtn" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+</div>
+
+<main class="about-wrapper">
+<!-- 🌼 Hero Section -->
+  <section class="hero">
+    <h1>About Stotra Pushpanjali</h1>
+    <p>
+      A divine space dedicated to spreading devotion, peace, and positivity
+      through sacred stotras and mantras of Lord Shiva, Shri Ganesh, Shri Krishna,
+      Shri Ram, Hanuman, and many other deities.  
+      Explore the spiritual essence of Marathi <em>Sant Sahitya</em> through
+      heartfelt <strong>Abhangas</strong> that express centuries of devotion.
+    </p>
+  </section>
+
+  <!-- 🌸 About Section -->
+  <section class="about-info">
+    <h2>Our Vision</h2>
+    <p>
+      <strong>Stotra Pushpanjali</strong> was created to help devotees connect
+      deeply with divinity through ancient Sanskrit compositions and spiritual
+      literature. Our vision is to make the recitation and understanding of 
+      <strong>stotras</strong>, <strong>mantras</strong>, and <strong>bhajans</strong> 
+      simple and accessible for everyone.  
+      The website offers the <strong>complete lyrics of all stotras</strong> so
+      devotees can easily read, learn, and chant them with devotion.
+    </p>
+
+    <h2>What We Offer</h2>
+    <ul>
+      <li>
+        Dedicated sections for Lord Shiva, Shri Ganesh, Shri Krishna, Shri Ram, Hanuman,
+        and Marathi Abhanga, each containing full lyrics of stotras and devotional hymns.
+      </li>
+      <li>
+        A serene reading experience with soothing backgrounds and divine fonts that enhance focus and peace.
+      </li>
+      <li>
+        A responsive and elegant design that adapts perfectly to mobile, tablet, and desktop devices.
+      </li>
+      <li>
+        Smooth navigation with dropdown menus and beautifully organized sections for easy access.
+      </li>
+      <li>
+        A devotional space that inspires faith, mindfulness, and spiritual growth through divine words and music.
+      </li>
+    </ul>
+
+    <h2>Our Purpose</h2>
+    <p>
+      Every verse, hymn, and mantra on this website is offered with care, love, and reverence.  
+      Whether you seek strength, peace, or divine connection, 
+      <em>Stotra Pushpanjali</em> serves as your sacred digital temple — a place to find
+      calmness and inspiration in every prayer.
+    </p>
+
+    <h2>Connect with Devotion</h2>
+    <p>
+      Take a moment to pause, recite, and reflect.  
+      Let the divine vibrations of stotras and abhangas fill your heart with devotion and joy.  
+      May the blessings of <strong>Shri Ram</strong>, <strong>Hanuman</strong>, and all deities
+      guide your soul toward peace, positivity, and eternal light. 🌸
+    </p>
+  </section>
+  </main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Brand (Logo + Name) -->
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <h3>Stotra Pushpanjali</h3>
+        </div>
+
+        <p>A devotional collection of Abhangas, Stotras & Bhakti Sangeet.</p>
+
+        <!-- Icons -->
+        <div class="footer-icons">
+            <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <!-- Contact Us -->
+        <p class="footer-contact">
+            <a href="contact.html">Contact Us</a>
+        </p>
+         
+        <p class="copy">Created with devotion by <span>Pooja Khedekar</span></p>
+        <p class="rights">© 2025 Stotra Pushpanjali — All Rights Reserved. Pooja Khedekar</p>
+    </div>
+</footer>
+
+<!-- Back Button Script -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const backBtn = document.getElementById("backBtn");
+
+    if (backBtn) {
+        backBtn.addEventListener("click", () => {
+
+            // Check if browser can actually go back
+            if (document.referrer && document.referrer !== window.location.href) {
+                window.history.back();
+            } else {
+                // No previous page → go to home page
+                window.location.href = "index.html";
+            }
+
+        });
+    }
+});
+
+</script>
+
+
+<script src="js/navbar.js"></script>
+</body>
+</html>

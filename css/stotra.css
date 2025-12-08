@@ -1,0 +1,411 @@
+
+/* --------------------------------------------------
+   BODY
+-------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: url("../images/backimg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 80px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* --------------------------------------------------
+   BACK BUTTON
+-------------------------------------------------- */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin:0 5px 0 ;
+    padding: 8px 14px;
+    background: #ffcc70;
+    color: #1e293b;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+}
+
+/* --------------------------------------------------
+   GOD CARD
+-------------------------------------------------- */
+.god-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+
+    /* ✨ Glass Transparent Background */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* ✨ Soft Golden Border */
+    border: 1.5px solid rgba(255, 215, 150, 0.45);
+
+    /* ✨ Soft Glow Shadow */
+    box-shadow: 
+        0 8px 22px rgba(0, 0, 0, 0.25),
+        0 0 14px rgba(255, 210, 150, 0.35);
+
+    border-radius: 22px;
+    transition: 0.3s ease;
+}
+
+/* ✨ Hover Glow Effect */
+.god-card:hover {
+    transform: scale(1.03);
+    box-shadow: 
+        0 10px 26px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(251, 228, 20, 0.881);
+}
+
+
+.god-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255,253,220,0.8);
+}
+.god-card h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #f8f8f8;
+    line-height: 1.3;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* --------------------------------------------------
+   MAIN LAYOUT
+-------------------------------------------------- */
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+/* --------------------------------------------------
+   SIDEBAR
+-------------------------------------------------- */
+.sidebar {
+    width: 260px;
+    background: rgba(15, 23, 42, 0.5);
+    padding: 20px;
+    color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+
+    position: sticky;
+    top: 100px;
+
+    transition: 0.3s ease;
+
+    text-shadow: 0 1px 3px rgba(0,0,0,0.45);
+
+}
+
+.sidebar-title {
+    color: #ffcc70;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sidebar-list a {
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+
+    color: #f8f8f8;
+    background: rgba(255,255,255,0.07);
+
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+
+    transition: 0.3s ease;
+}
+
+.sidebar-list a:hover {
+    background: #ffcc70;
+    color: #1e293b;
+    transform: translateX(6px);
+}
+.sidebar-list a.active {
+    background: #ffcc70;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+/* scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: #ffcc70;
+    border-radius: 10px;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --------------------------------------------------
+   LYRICS AREA (Container only — real styles in lyrics.css)
+-------------------------------------------------- */
+/* --------------------------------------------------
+   OUTER LYRICS AREA (Container)
+-------------------------------------------------- */
+#lyrics-area {
+    flex: 1;
+
+    /* Glass Background */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    padding: 22px;
+    border-radius: 16px;
+
+    /* Golden Glow */
+    box-shadow:
+        0 0 18px rgba(255, 200, 0, 0.35),
+        0 6px 15px rgba(0, 0, 0, 0.25);
+
+    /* FIXED HEIGHT + Scroll */
+    max-height: 75vh;
+    overflow-y: auto;
+
+    /* Smooth scroll */
+    scroll-behavior: smooth;
+}
+
+
+/* --------------------------------------------------
+   GOLDEN SPIRITUAL SCROLLBAR
+-------------------------------------------------- */
+#lyrics-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+#lyrics-area::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#lyrics-area::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ffd700, #ffb300);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+}
+
+#lyrics-area::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ffea00, #ffca00);
+}
+
+
+
+
+
+/* --------------------------------------------------
+   SIDEBAR TOGGLE (MOBILE)
+-------------------------------------------------- */
+/* Center toggle button – hidden on desktop */
+.sidebar-toggle {
+    display: none;
+    background: #ffcc70;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;        /* centers the button */
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    width: fit-content;       /* keep its size tight */
+}
+
+.sidebar.open {
+    display: block;
+    animation: fadeSlide 0.3s ease;
+}
+
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    /* Sidebar hidden by default */
+    .sidebar {
+        display: none;
+        width: 100%;
+        position: relative;
+
+        /* ⭐ Mobile height control */
+        max-height: 70vh;
+        overflow-y: auto;
+
+        padding-bottom: 20px;
+        top: 0;
+        border-radius: 12px;
+    }
+
+    /* Mobile scrollbar support */
+    .sidebar::-webkit-scrollbar {
+        width: 6px;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+        background: #ffcc70;
+        border-radius: 10px;
+    }
+
+    /* Show when toggled */
+    .sidebar.open {
+        display: block;
+        animation: fadeSlide 0.3s ease;
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+
+    #lyrics-area {
+        margin-top: 15px;
+        
+        max-height: 75vh;
+        padding: 18px;
+    }
+
+
+    /* 📌 COLLAPSED SIDEBAR MODE */
+.sidebar.collapsed {
+    display: block;
+    max-height: 55px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #ffcc70;
+    background: #fffbe8;
+    padding: 8px 12px;
+    transition: max-height 0.3s ease;
+}
+
+/* Hide the title */
+.sidebar.collapsed .sidebar-title {
+    display: none !important;
+}
+
+/* Force list to not push items out */
+.sidebar.collapsed .sidebar-list {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide all items */
+.sidebar.collapsed .sidebar-list a {
+    display: none !important;
+}
+
+/* Show only selected item */
+.sidebar.collapsed .sidebar-list a.active {
+    display: block !important;
+    font-weight: bold;
+    color: #d97706;
+    background: none !important;
+    padding: 6px 0 !important;
+    border: none !important;
+    font-size: 1.1rem;
+}
+
+}
+
+
+
+@media (max-width: 480px) {
+    .back-btn {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    .god-card {
+        padding: 16px;
+        gap: 14px;
+    
+        width: fit-content;
+        max-width: 95%;
+        
+    }
+    
+
+    .god-card img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .god-card h2 {
+        font-size: 1.2rem;
+    }
+
+    #lyrics-area {
+        /* max-height: 55vh; */
+        padding: 15px;
+    }
+}
+
+
+/* --------------------------------------------------
+   SMALL MOBILE FIX — Keep God Card Horizontal
+-------------------------------------------------- */
+@media (max-width: 380px) {
+
+    .god-card {
+        gap: 10px;             /* reduce space */
+        padding: 14px 12px;    /* tighter padding */
+    }
+
+    .god-card img {
+        width: 80px;           /* smaller image */
+        height: 80px;
+    }
+
+    .god-card h2 {
+        font-size: 1.05rem;    /* slightly smaller text */
+    }
+}

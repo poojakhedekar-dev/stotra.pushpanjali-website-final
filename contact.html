@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us| Stotra Pushpanjali</title>
+    
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon/favicon-180x180.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#7b2cbf">
+
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="site-logo" class="logo-image">
+            <span class="site-name">Stotra Pushpanjali</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" title="Home Page">Home</a></li>
+            <li><a href="about.html" title="About Info Page"
+>About</a></li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)" title="Select God and Explore Page ">Explore Gods <span class="arrow">🔽</span> </a>
+                <ul class="dropdown-menu">
+                    <li><a href="shiva.html">Shiva</a></li>
+                    <li><a href="ganesh.html">Shri Ganesh</a></li>
+                    <li><a href="krishna.html">Shri Krishna</a></li>
+                    <li><a href="ram.html">Shri Ram</a></li>
+                    <li><a href="abhanga.html">Marathi Abhanga</a></li>
+                    <li><a href="hanuman.html">Shri Hanuman</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html" title="Contact Page">Contact Us</a></li>
+        </ul>
+
+        <!-- ✅ HAMBURGER MENU BUTTON -->
+        <div class="hamburger">&#9776;</div>
+
+    </nav>
+    
+  </header>
+
+<!-- BACK BUTTON -->
+    <div class="back-btn-container">
+    <button id="backBtn" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+</div>
+
+<!-- TOP SECTION: left intro + developer card on top-right -->
+  <section class="top-section">
+    <div class="left-intro">
+      <!-- Contact tab-style heading (acts as tab and scroll trigger) -->
+      <h1 class="contact-tab-heading" id="contactTab">Contact Us</h1><br>
+      <p>We would love to hear from you.<br>Send Us a message and Give Your Feedback.🍁</p>
+    </div>
+
+    <!-- Developer card (positioned visually to the right) -->
+    <aside class="dev-card" aria-labelledby="devCardTitle">
+      <img src="images/logo.png" alt="Pooja Khedekar" class="dev-photo" />
+      <h3 id="devCardTitle">Pooja Khedekar</h3>
+      <p class="role">Frontend Developer | B.Sc (Computer Science)</p>
+
+      <div class="dev-icons" aria-hidden="false">
+        <a href="mailto:pooja.khedekar.dev@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/poojakhedekar-dev" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn Coming soon"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <span class="dev-tag">DEVELOPER</span>
+    </aside>
+  </section>
+
+  <!-- CONTACT FORM SECTION (target of the tab) -->
+  <main>
+    <section id="contact-form-section" class="contact-container" aria-labelledby="contactFormTitle">
+      <h2 id="contactFormTitle">Send Us a Message</h2>
+
+      <form class="contact-form" autocomplete="on" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Brand (Logo + Name) -->
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <h3>Stotra Pushpanjali</h3>
+        </div>
+
+        <p>A devotional collection of Abhangas, Stotras & Bhakti Sangeet.</p>
+
+        <!-- Icons -->
+        <div class="footer-icons">
+            <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <p class="copy">Created with devotion by <span>Pooja Khedekar</span></p>
+        <p class="rights">© 2025 Stotra Pushpanjali — All Rights Reserved. Pooja Khedekar</p>
+    </div>
+</footer>
+
+
+<script src="js/navbar.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

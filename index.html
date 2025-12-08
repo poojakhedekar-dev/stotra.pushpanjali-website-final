@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stotra Pushpanjali- Home </title>
+
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon/favicon-180x180.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#7b2cbf">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="site-logo" class="logo-image">
+            <span class="site-name">Stotra Pushpanjali</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" title="Home Page">Home</a></li>
+            <li><a href="about.html" title="About Info Page"
+>About</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" title="Select God and Explore Page"> Explore Gods <span class="arrow">🔽</span> </a>
+                <ul class="dropdown-menu">
+                    <li><a href="shiva.html">Shiva</a></li>
+                    <li><a href="ganesh.html">Shri Ganesh</a></li>
+                    <li><a href="krishna.html">Shri Krishna</a></li>
+                    <li><a href="ram.html">Shri Ram</a></li>
+                    <li><a href="abhanga.html">Marathi Abhanga</a></li>
+                    <li><a href="hanuman.html">Shri Hanuman</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html" title="Contact Page">Contact Us</a></li>
+        </ul>
+
+        <!-- ✅ HAMBURGER MENU BUTTON -->
+        <div class="hamburger">&#9776;</div>
+
+    </nav>
+</header>
+
+   <section class="hero-section">
+     
+   
+    <!-- Mandala & OM -->
+    <div class="mandala-bg"></div>
+
+    <!-- TOP MANTRA -->
+    <div class="mantra-container">
+        <p class="mantra-type"></p>
+    </div>
+    
+
+    <!-- Top: Logo + Title -->
+    <div class="hero-top">
+        <img src="images/logo.png" class="hero-logo" />
+        <h1 class="site-title">Stotra Pushpanjali</h1>
+    </div>
+
+    <!-- Welcome Typing -->
+    <div class="hero-bottom">
+        <h2 class="typing-text">
+            <span id="welcomeText"></span>
+            
+            <!--<span class="cursor">|</span>-->
+        </h2>
+
+        <p class="sub-desc">
+            A sacred collection of Stotras, Mantras & Abhangas dedicated to the Divine.<br>
+            ✨ Explore the sacred vibrations of <b>Mahadev</b>, <b>Shri Ganesh</b>,  
+        <b>Shri Krishna</b>, <b>Shri Ram</b>, and many more divine deities. <br> 
+        Immerse yourself in the soulful beauty of <b>Marathi Abhangas</b> and  
+        let your heart resonate with devotion. 🌿
+        </p>
+</div>
+<div class="diya-particles"></div>
+</section>
+
+<section class="god-section">
+
+    <div class="explore-tab" onclick="scrollToGods()">
+       Explore Divine Stotras
+   </div>
+
+    <div class="god-cards" id="godCardsSection">
+
+        <div class="god-card" onclick="window.location.href='shiva.html'">
+            <img src="images/mahadev.PNG" alt="Shiva">
+            <h3>Shiva</h3>
+        </div>
+
+        <div class="god-card" onclick="window.location.href='ganesh.html'">
+            <img src="images/ganesh.png" alt="Ganesh">
+            <h3>Shri Ganesh</h3>
+        </div>
+
+        <div class="god-card" onclick="window.location.href='krishna.html'">
+            <img src="images/krishna.png" alt="Krishna">
+            <h3>Shri Krishna</h3>
+        </div>
+
+        <div class="god-card" onclick="window.location.href='ram.html'">
+            <img src="images/ram.jpg" alt="Shri Ram">
+            <h3>Shri Ram</h3>
+        </div>
+
+         <div class="god-card" onclick="window.location.href='hanuman.html'">
+            <img src="images/hanuman.png" alt="Hanuman">
+            <h3>Shri Hanuman</h3>
+        </div>
+
+        <div class="god-card" onclick="window.location.href='abhanga.html'">
+            <img src="images/vitthalmain.jpg" alt="Vitthal Abhanga">
+            <h3>Marathi Abhanga</h3>
+        </div>
+
+       
+
+    </div>
+
+</section>
+
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+
+        <!-- Brand (Logo + Name) -->
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <h3>Stotra Pushpanjali</h3>
+        </div>
+
+        <p>A devotional collection of Abhangas, Stotras & Bhakti Sangeet.</p>
+
+        <!-- Icons -->
+        <div class="footer-icons">
+            <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <!-- Contact Us -->
+        <p class="footer-contact">
+            <a href="contact.html">Contact Us</a>
+        </p>
+         
+        <p class="copy">Created with devotion by <span>Pooja Khedekar</span></p>
+        <p class="rights">© 2025 Stotra Pushpanjali — All Rights Reserved. Pooja Khedekar</p>
+    </div>
+</footer>
+
+
+
+
+<script src="js/navbar.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>

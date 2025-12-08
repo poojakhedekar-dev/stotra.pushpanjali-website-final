@@ -1,0 +1,79 @@
+/* --------------------------------------------------
+   LYRICS AREA — Clean, bold, highly readable
+   (NO Google Fonts used — only system-safe fonts)
+-------------------------------------------------- */
+
+#lyrics-area {
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+
+  /* Safe, beautiful fonts that work everywhere */
+  font-family: 
+      "Nirmala UI", 
+      "Mangal",                /* Extra fallback for Win */
+      "Kokila",          /* Windows Devanagari */
+      "Segoe UI", 
+      "Arial", 
+      sans-serif;
+
+  font-weight: 600;         /* Make it bold */
+  color: #3b2400;
+  font-size: 1.45rem;       /* Clearly readable */
+  line-height: 2.1;
+  text-align: center;
+
+  animation: fadeIn 0.45s ease-out;
+}
+
+/* Title */
+.stotra-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 14px;
+  background: #fdf1d6;
+  border-radius: 18px;
+  color: #7a3a00;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255, 185, 100, 0.6);
+}
+
+/* Author name */
+.author {
+  margin-top: 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #7a3a00;
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  #lyrics-area {
+    font-size: 1.25rem;
+    padding: 22px;
+  }
+  .stotra-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #lyrics-area {
+    font-size: 1.1rem;
+    padding: 18px;
+  }
+  .stotra-title {
+    font-size: 1.5rem;
+  }
+}

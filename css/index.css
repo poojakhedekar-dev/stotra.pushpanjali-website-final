@@ -1,0 +1,600 @@
+
+/* --------------------------------------------------
+   BODY
+-------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: url("../images/backimg.png"),linear-gradient(135deg, #3b0a45 0%, #5a189a 40%, #ffd700 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*padding-top: 80px;*/
+    overflow-x: hidden;
+    min-height: 100vh;
+    color: #1e293b;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* =====================================================
+   HERO SECTION (Main container)
+===================================================== */
+.hero-section {
+    position: relative;
+    padding: 120px 20px 150px;
+    text-align: center;
+    overflow: hidden;
+
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+
+/* =====================================================
+   BIG ROTATING MANDALA (Full section background)
+===================================================== */
+.mandala-bg {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* MAKE PERFECT CIRCLE */
+    border-radius: 50%;
+    overflow: hidden;
+
+    /* Mandala image inside circle */
+    background: url('../images/mandala.png') center/cover no-repeat;
+
+    opacity: 0.14;
+
+    animation: rotateMandala 38s linear infinite;
+
+    z-index: 1;
+}
+
+
+
+/* =====================================================
+   MANTRA ON TOP (Below Navbar)
+===================================================== */
+.mantra-container {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    z-index: 20;
+}
+
+.mantra-type {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #fff7e3;
+    text-shadow: 0 0 14px rgba(255, 170, 70, 0.9);
+    min-height: 32px;
+    display: inline-block;
+}
+
+
+/* =====================================================
+   HERO TOP (Logo + Site Title)
+===================================================== */
+.hero-top {
+    position: relative;
+    z-index: 20;
+}
+
+.hero-logo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+     
+    border: 4px solid rgba(255, 160, 50, 1);
+    box-shadow: 
+        0 0 40px rgba(255, 120, 40, 0.8),
+        0 0 80px rgba(255, 100, 20, 0.5);
+
+    animation: fadeInDown 1.2s ease-out;
+}
+
+
+.site-title {
+    font-size: 3rem;
+    margin-top: 18px;
+    font-weight: bold;
+    color: #ffd700;
+
+    text-shadow: 
+        0 0 22px rgba(215,215,0,1),
+        0 0 45px rgba(255,120,40,0.8);
+
+    animation:
+        glowPulse 3.5s infinite ease-in-out,
+        zoomFloat 4.5s infinite ease-in-out;
+}
+
+/* =====================================================
+   WELCOME TYPING TEXT
+===================================================== */
+.hero-bottom {
+    position: relative;
+    z-index: 20;
+}
+
+.typing-text {
+    margin-top: 35px;
+    font-size: 2rem;
+    color: #ffe5b5;
+    font-weight: 600;
+    animation: softGlow 3s ease-in-out infinite;
+}
+
+@keyframes softGlow {
+    0% { text-shadow: 0 0 5px #ffcc88; }
+    50% { text-shadow: 0 0 20px #ffae42; }
+    100% { text-shadow: 0 0 5px #ffcc88; }
+}
+
+/* Description */
+.sub-desc {
+    margin-top: 12px;
+    font-size: 1.05rem;
+    color: #ffe9d1;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   FLOATING DIYA PARTICLES
+===================================================== */
+
+.diya-particles::before,
+.diya-particles::after {
+    content: "✦";
+    position: absolute;
+    font-size: 26px;
+    color: rgba(255, 180, 60, 0.9);
+    animation: floatUp 6s infinite ease-in-out;
+}
+
+.diya-particles::after {
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 1.5s;
+}
+
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+@keyframes rotateMandala {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes glowPulse {
+    0%,100% {
+        text-shadow:
+            0 0 20px rgba(255,120,40,1),
+            0 0 40px rgba(255,120,40,0.9);
+    }
+    50% {
+        text-shadow:
+            0 0 35px rgba(255,150,70,1),
+            0 0 65px rgba(255,140,60,0.7);
+    }
+}
+
+@keyframes zoomFloat {
+    0%,100% { transform: scale(1); }
+    50%     { transform: scale(1.07); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+    0%,100% { opacity: 1; }
+    50%     { opacity: 0; }
+}
+
+@keyframes floatUp {
+    0%   { bottom: -20px; opacity: 0; }
+    50%  { opacity: 1; }
+    100% { bottom: 120%; opacity: 0; }
+}
+
+/*--------------------------------------------------------*/
+/*---------------------------------------------------*/
+/* GOD SECTION */
+.god-section {
+    margin: 80px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* EXPLORE TAB BUTTON */
+.explore-tab {
+    display: inline-block;
+    background: linear-gradient(to right, #ffcc70, #ff9f45);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4a2c00;
+    text-shadow: 0 0 3px rgba(255,255,255,0.6);
+    box-shadow: 
+        0 0 10px rgba(255,190,90,0.6),
+        0 0 20px rgba(255,160,60,0.4);
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+/* Hover Effect */
+.explore-tab:hover {
+    transform: scale(1.08);
+    box-shadow: 
+        0 0 18px rgba(255,200,100,0.9),
+        0 0 35px rgba(255,150,50,0.7);
+}
+
+
+/* --------------------------------------------------
+   GOD CARDS GRID
+-------------------------------------------------- */
+.god-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* --------------------------------------------------
+   GOD CARD (Upgraded UI)
+-------------------------------------------------- */
+.god-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 190, 80, 0.4);
+    box-shadow: 0 0 25px rgba(255, 190, 80, 0.18);
+
+    transition: all 0.45s ease;
+}
+
+/* Soft Aura Glow on Hover */
+.god-card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 
+        0 0 35px rgba(255, 200, 120, 0.8),
+        0 0 60px rgba(255, 150, 50, 0.5);
+    border-color: rgba(255, 210, 120, 1);
+}
+
+/* --------------------------------------------------
+   GOLDEN SHINE SWEEP EFFECT
+-------------------------------------------------- */
+.god-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    transition: 0.7s;
+}
+
+.god-card:hover::before {
+    left: 130%;
+}
+
+/* --------------------------------------------------
+   IMAGE
+-------------------------------------------------- */
+.god-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+
+    transition: transform 0.45s ease;
+}
+
+/* Zoom Image on Hover */
+.god-card:hover img {
+    transform: scale(1.08);
+}
+
+/* --------------------------------------------------
+   TITLE
+-------------------------------------------------- */
+.god-card h3 {
+    font-size: 1.4rem;
+    color: #ffe2b0;
+    font-weight: 700;
+    text-shadow: 0 0 12px rgba(255,180,80,0.7);
+    letter-spacing: 0.5px;
+
+    transition: color 0.3s ease;
+}
+
+.god-card:hover h3 {
+    color: #fff4d3;
+}
+
+#godCardsSection {
+    scroll-margin-top: 120px; /* adjust based on your navbar height */
+    
+    padding-top: 40px;
+}
+
+
+
+/* ============================================================
+   📱 MOBILE RESPONSIVE QUERIES
+   Covers: 1024px, 768px, 600px, 480px, 360px
+============================================================ */
+
+/* 1) Large Tablets / Small Laptops */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 110px 20px 130px;
+    }
+    .hero-logo {
+        width: 150px;
+        height: 150px;
+    }
+    .site-title {
+        font-size: 2.6rem;
+    }
+    .typing-text {
+        font-size: 1.8rem;
+    }
+    .mandala-bg {
+        width: 620px;
+        height: 620px;
+    }
+
+     .god-cards {
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .god-card img {
+        height: 190px;
+    }
+
+    .god-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* 2) Tablets */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 15px 120px;
+    }
+
+    .hero-logo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .site-title {
+        font-size: 2.3rem;
+    }
+
+    .typing-text {
+        font-size: 1.6rem;
+    }
+
+    .mantra-type {
+        font-size: 1.2rem;
+    }
+
+    .mandala-bg {
+        width: 520px;
+        height: 520px;
+        opacity: 0.17;
+    }
+
+    .explore-tab {
+        font-size: 1.3rem;
+        padding: 10px 22px;
+    }
+
+    .god-cards {
+        gap: 22px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .god-card {
+        padding: 18px;
+    }
+
+    .god-card img {
+        height: 170px;
+    }
+
+    .god-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 3) Large Phones */
+@media (max-width: 600px) {
+    body {
+        padding-top: 65px;
+    }
+
+    .hero-section {
+        padding: 90px 12px 110px;
+    }
+
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .site-title {
+        font-size: 1.9rem;
+    }
+
+    .typing-text {
+        font-size: 1.45rem;
+    }
+
+    .mantra-type {
+        font-size: 1.1rem;
+    }
+
+    .mandala-bg {
+        width: 440px;
+        height: 440px;
+    }
+
+    .explore-tab {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+    }
+
+    .god-cards {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 18px;
+    }
+
+    .god-card {
+        padding: 15px;
+    }
+
+    .god-card img {
+        height: 150px;
+    }
+
+    .god-card h3 {
+        font-size: 1.15rem;
+    }
+    
+
+   
+}
+
+/* 4) Regular Phones (iPhone 13 / Samsung A series) */
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 80px 10px 90px;
+    }
+
+    .hero-logo {
+        width: 105px;
+        height: 105px;
+    }
+
+    .site-title {
+        font-size: 1.7rem;
+    }
+
+    .typing-text {
+        font-size: 1.25rem;
+    }
+
+    .mantra-type {
+        font-size: 1rem;
+    }
+
+    .mandala-bg {
+        width: 360px;
+        height: 360px;
+        opacity: 0.2;
+    }
+
+    .explore-tab {
+        font-size: 1.1rem;
+        padding: 8px 18px;
+    }
+
+   .god-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .god-card {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .god-card img {
+        height: 130px;
+    }
+
+    .god-card h3 {
+        font-size: 1.05rem;
+    }
+}
+
+/* 5) Small Phones (iPhone SE / Galaxy Fold) */
+@media (max-width: 360px) {
+    .hero-section {
+        padding: 70px 8px 80px;
+    }
+
+    .hero-logo {
+        width: 95px;
+        height: 95px;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .typing-text {
+        font-size: 1.1rem;
+    }
+
+    .mandala-bg {
+        width: 300px;
+        height: 300px;
+    }
+
+     .god-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .god-card img {
+        height: 150px;
+    }
+
+    .god-card h3 {
+        font-size: 1rem;
+    }
+}
