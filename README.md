@@ -33,6 +33,23 @@ This project demonstrates practical skills in:
 Perfect for showcasing development skills to recruiters and hiring managers.
 
 ---
+
+**🚀 Live Demo**
+
+https://poojakhedekar-dev.github.io/stotra.pushpanjali-website-final/
+
+---
+
+**👩‍💻 Developed By:**
+
+Pooja Khedekar  
+Frontend Developer  
+
+[GitHub](https://github.com/poojakhedekar-dev)  
+[LinkedIn](http://www.linkedin.com/in/pooja-khedekar-dev)
+
+
+---
 <details>
 <summary><b>📁 Project Structure (Click to Expand)</b></summary>
 
@@ -97,18 +114,3 @@ stotra-pushpanjali-website/
 </details>
 
 
----
-
-**🚀 Live Demo**
-
-https://poojakhedekar-dev.github.io/stotra.pushpanjali-website-final/
-
----
-
-**👩‍💻 Developed By:**
-
-Pooja Khedekar  
-Frontend Developer  
-
-[GitHub](https://github.com/poojakhedekar-dev)  
-[LinkedIn](http://www.linkedin.com/in/pooja-khedekar-dev)
