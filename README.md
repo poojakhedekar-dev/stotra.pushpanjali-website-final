@@ -1,50 +1,42 @@
-# stotra.pushpanjali-website-final
-Stotra Pushpanjali is a devotional website featuring organized lyrics of stotras, mantras, and Marathi abhangas of various deities. 
-With a clean UI, dynamic navigation, and full mobile responsiveness, it is built using HTML, CSS, and JavaScript to offer a smooth and peaceful reading experience across all devices. 🙏✨
+# 🌸 Stotra Pushpanjali 
 
+Stotra Pushpanjali is a devotional website featuring organized lyrics of stotras, mantras, and Marathi abhangas of various deities.  
+With a clean UI, dynamic navigation, and full mobile responsiveness, it is built using **HTML, CSS, and JavaScript** to offer a smooth and peaceful reading experience across all devices. 🙏✨
 
+---
 
-🌸🍁☘️ Stotra Pushpanjali🌸☘️🍁
+## 🌟 Key Highlights
+- **Dynamic Content Loading**: Loads stotra/abhanga lyrics instantly using JavaScript — no page refresh required.  
+- **Responsive UI/UX**: Mobile-first design with adaptive sidebar, smooth navigation, and optimized layouts.  
+- **Scalable Architecture**: Separate lyric files make it easy to add new stotras or abhangas without modifying core UI.  
+- **Performance-Focused**: Lightweight HTML, CSS, and JavaScript ensures fast load times.
 
-A professionally built devotional website presenting a curated collection of Stotras, Mantras, and Marathi Abhangas of various deities.
-Designed with a clean interface, smooth navigation, and fully responsive layouts, the platform delivers an elegant and distraction-free reading experience across all devices.
+---
 
-⭐ Key Highlights
-• Dynamic Content Loading
-Loads stotra/abhanga lyrics instantly using JavaScript — no page refresh required.
+## 🛠️ Tech Stack
+- **HTML5** – Structure & layout  
+- **CSS3** – Styling, animations, responsive design  
+- **JavaScript** – Dynamic loading & UI interactions  
+- **Font Awesome** – Icons  
+- **GitHub Pages** – Deployment (optional)
 
-• Responsive UI/UX
-Mobile-first design with an adaptive sidebar, smooth navigation, and optimized layouts.
+---
 
-• Scalable Architecture
-Separate lyric files make it easy to add new stotras or abhangas without modifying core UI.
+## 🎯 Purpose
+This project demonstrates practical skills in:  
+- Frontend development  
+- Responsive web design  
+- Clean UI/UX practices  
+- JavaScript-based dynamic content loading  
+- Project structuring & maintainability  
 
-• Performance-Focused
-  Lightweight HTML, CSS, and JavaScript implementation ensures fast load times.
+Perfect for showcasing development skills to recruiters and hiring managers.
 
-🛠️ Tech Stack
+---
+<details>
+<summary><b>📁 Project Structure (Click to Expand)</b></summary>
 
-    HTML5 – Structure & layout
-
-    CSS3 – Styling, animations, responsive design
-
-   JavaScript – Dynamic loading & UI interactions
-
-   Font Awesome – Icons
-
-GitHub Pages (optional) – Deployment
-
-🎯 Purpose
-   This project demonstrates strong skills in:
-✔ Frontend development
-✔ Responsive web design
-✔ Clean UI/UX practices
-✔ JavaScript-based dynamic content loading
-✔ Project structuring & maintainability
-
-Perfect for showcasing practical development skills to recruiters and hiring managers.
-
-📁 Project Structure
+```txt
 stotra-pushpanjali-website/
 │
 ├── css/
@@ -103,17 +95,20 @@ stotra-pushpanjali-website/
 ├── ram.html
 └── hanuman.html
 
+</details>
 
-🚀 Live Demo
+---
 
-Coming soon (GitHub Pages link will be added here)
+**🚀 Live Demo**
 
+https://poojakhedekar-dev.github.io/stotra.pushpanjali-website-final/
 
-👩‍💻 Developed By:
+---
 
-  Pooja Khedekar
-  Frontend Developer | UI/UX Enthusiast
-  
-  GitHub: https://github.com/poojakhedekar-dev
-  
-  LinkedIn: (add your link)
+**👩‍💻 Developed By:**
+
+Pooja Khedekar  
+Frontend Developer  
+
+[GitHub](https://github.com/poojakhedekar-dev)  
+[LinkedIn](http://www.linkedin.com/in/pooja-khedekar-dev)
